@@ -7,7 +7,7 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "dev": "NODE_ENV='development' nodemon index.js",
+    "dev": "NODE_ENV='development' nodemon --watch src/**/*.{js,ts} index.js",
     "start": "yarn build && node lib/server.js",
     "build": "babel src --out-dir lib --copy-files --extensions '.ts,.js'",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --fix"
